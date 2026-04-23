@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+        <style>
+            .stylebg{
+                background:linear-gradient(to right, red, white);
+            }
+        </style>
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100 stylebg">
+        <div class="container d-flex-column gap-2 mt-2">
+            <h1 class="text-center">password generator</h1>
+            <div class="text-center">
+                <label class="fs-5" for="password">panjang password</label>
+                <input class="form-control form-control-g" type="number" id="passwordLength" />
+                <label class="fs-5 text-danger" for="password">password</label>
+                <input class="form-control form-control-g" id="password" disabled/>
+                <button class="btn btn-dark mt-2 text-uppercase fw-bold btn-lg" onclick="getPassword()">generate password</button>
+                <button class="btn btn-danger mt-2 text-uppercase fw-bold btn-lg" onclick="copyPassword()">copy password to clipboard</button>
+                <a class="btn btn-primary mt-2 text-uppercase fw-bold btn-lg" onclick="savePassword()" id="saveButton">save password as file</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>
