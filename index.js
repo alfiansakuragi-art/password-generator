@@ -23,9 +23,6 @@ const generatePassword = (len) => {
 const getPassword = () => {
     const newPassword = generatePassword(passwordLength.value);
     password.value = newPassword;
-    setTimeout(() => {
-        alert("password generated")
-    }, 1000)
 }
 
 const savePassword = () => {
